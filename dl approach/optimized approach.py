@@ -38,7 +38,7 @@ client = Client(twilio_account_sid, twilio_auth_token)
 
 
 # Root directory of the project
-ROOT_DIR = Path(".")
+ROOT_DIR = Path("C:\Users\ariji\Desktop\Parking System")
 
 # Directory to save logs and trained model
 MODEL_DIR = os.path.join(ROOT_DIR, "logs")
@@ -54,7 +54,7 @@ if not os.path.exists(COCO_MODEL_PATH):
 IMAGE_DIR = os.path.join(ROOT_DIR, "images")
 
 # Video file or camera to process - set this to 0 to use your webcam instead of a video file
-VIDEO_SOURCE = "test_images/parking.mp4"
+VIDEO_SOURCE = "C:/video/parking.mp4"
 
 # Create a Mask-RCNN model in inference mode
 model = MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=MaskRCNNConfig())
